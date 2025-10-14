@@ -1,0 +1,124 @@
+{
+  "trashCans": [
+    {
+      "id": 1,
+      "name": "Trash Can - Downtown Center",
+      "location": {
+        "lat": 35.5889,
+        "lng": -5.3626,
+        "address": "Avenue Mohammed V, Tétouan"
+      },
+      "status": "available",
+      "fullness": 25,
+      "capacity": 100,
+      "type": "general",
+      "lastCollection": "2025-10-13T08:30:00",
+      "earnings": 15.50
+    },
+    {
+      "id": 2,
+      "name": "Trash Can - Plaza Moulay El Mehdi",
+      "location": {
+        "lat": 35.5920,
+        "lng": -5.3650,
+        "address": "Plaza Moulay El Mehdi, Tétouan"
+      },
+      "status": "available",
+      "fullness": 45,
+      "capacity": 100,
+      "type": "recyclable",
+      "lastCollection": "2025-10-13T10:15:00",
+      "earnings": 22.30
+    },
+    {
+      "id": 3,
+      "name": "Trash Can - Martil Beach",
+      "location": {
+        "lat": 35.5850,
+        "lng": -5.3600,
+        "address": "Corniche de Martil, Martil"
+      },
+      "status": "full",
+      "fullness": 95,
+      "capacity": 100,
+      "type": "general",
+      "lastCollection": "2025-10-12T16:45:00",
+      "earnings": 8.75
+    },
+    {
+      "id": 4,
+      "name": "Trash Can - University Campus",
+      "location": {
+        "lat": 35.5930,
+        "lng": -5.3680,
+        "address": "Université Abdelmalek Essaâdi, Tétouan"
+      },
+      "status": "available",
+      "fullness": 60,
+      "capacity": 120,
+      "type": "general",
+      "lastCollection": "2025-10-13T07:00:00",
+      "earnings": 18.90
+    },
+    {
+      "id": 5,
+      "name": "Trash Can - Grand Souk",
+      "location": {
+        "lat": 35.5870,
+        "lng": -5.3640,
+        "address": "Grand Souk, Tétouan"
+      },
+      "status": "available",
+      "fullness": 30,
+      "capacity": 100,
+      "type": "recyclable",
+      "lastCollection": "2025-10-13T09:20:00",
+      "earnings": 12.40
+    },
+    {
+      "id": 6,
+      "name": "Trash Can - Bus Station",
+      "location": {
+        "lat": 35.5910,
+        "lng": -5.3610,
+        "address": "Gare Routière, Tétouan"
+      },
+      "status": "maintenance",
+      "fullness": 0,
+      "capacity": 100,
+      "type": "general",
+      "lastCollection": "2025-10-13T06:00:00",
+      "earnings": 0.00
+    },
+    {
+      "id": 7,
+      "name": "Trash Can - Municipal Park",
+      "location": {
+        "lat": 35.5895,
+        "lng": -5.3595,
+        "address": "Parc Municipal, Tétouan"
+      },
+      "status": "available",
+      "fullness": 15,
+      "capacity": 80,
+      "type": "general",
+      "lastCollection": "2025-10-13T11:30:00",
+      "earnings": 25.60
+    },
+    {
+      "id": 8,
+      "name": "Trash Can - Shopping Mall",
+      "location": {
+        "lat": 35.5940,
+        "lng": -5.3620,
+        "address": "Centre Commercial, Tétouan"
+      },
+      "status": "available",
+      "fullness": 70,
+      "capacity": 150,
+      "type": "general",
+      "lastCollection": "2025-10-13T05:45:00",
+      "earnings": 30.20
+    }
+  ]
+}
