@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 const sampleWastes = [
-  { id: 1, name: "Plastic Bottles", type: "Plastic", price: "$120/ton", quantity: "5 tons", country: "Salé", image: "/images/paper.jpg" },
-  { id: 2, name: "Scrap Metal", type: "Metal", price: "$450/ton", quantity: "10 tons", country: "Casablanca", image: "/images/metal.webp" },
-  { id: 3, name: "Used Paper", type: "Paper", price: "$80/ton", quantity: "7 tons", country: "Hed Soualem", image: "/images/paper.jpg" },
-  { id: 4, name: "Glass Waste", type: "Glass", price: "$50/ton", quantity: "3 tons", country: "Marckech", image: "/images/glass.jpg" },
-  { id: 5, name: "E-Waste", type: "Electronics", price: "$300/ton", quantity: "2 tons", country: "Casablanca", image: "/images/plasricBottoles.webp" },
+  { id: 1, name: "Plastic Bottles", type: "Plastic", price: "120MAD/ton", quantity: "5 tons", country: "Salé", image: "/images/paper.jpg" },
+  { id: 2, name: "Scrap Metal", type: "Metal", price: "450MAD/ton", quantity: "10 tons", country: "Casablanca", image: "/images/metal.webp" },
+  { id: 3, name: "Used Paper", type: "Paper", price: "80MAD/ton", quantity: "7 tons", country: "Hed Soualem", image: "/images/paper.jpg" },
+  { id: 4, name: "Glass Waste", type: "Glass", price: "50MAD/ton", quantity: "3 tons", country: "Marckech", image: "/images/glass.jpg" },
+  { id: 5, name: "E-Waste", type: "Electronics", price: "300MAD/ton", quantity: "2 tons", country: "Casablanca", image: "/images/plasricBottoles.webp" },
 ];
 
 function BuySale() {

@@ -30,8 +30,8 @@ function CollectorInterface() {
   
   // Collector location (can be updated with real GPS data)
   const [collectorLocation] = useState({
-    lat: 35.5989,
-    lng: -5.3626,
+    "lat": 35.614121,
+        "lng": -5.2789028,
     name: "Collector - OSOS"
   })
   
@@ -90,47 +90,6 @@ function CollectorInterface() {
               Work smarter, not harder! Our intelligent routing system identifies 
               priority bins and creates the most efficient collection path for you.
             </p>
-
-            <div className="collector-stats-grid">
-              <div className="collector-stat-card priority">
-                <Package className="stat-icon" size={24} />
-                <div className="stat-number">{highPriorityBins.length}</div>
-                <div className="stat-label">Priority Bins</div>
-              </div>
-              <div className="collector-stat-card">
-                <TrendingUp className="stat-icon" size={24} />
-                <div className="stat-number">{totalCapacity.toFixed(0)}%</div>
-                <div className="stat-label">Avg Capacity</div>
-              </div>
-              {optimalPath && showPath && (
-                <>
-                  <div className="collector-stat-card">
-                    <Route className="stat-icon" size={24} />
-                    <div className="stat-number">{optimalPath.numberOfStops}</div>
-                    <div className="stat-label">Stops</div>
-                  </div>
-                  <div className="collector-stat-card">
-                    <Navigation className="stat-icon" size={24} />
-                    <div className="stat-number">{optimalPath.totalDistance}</div>
-                    <div className="stat-label">km</div>
-                  </div>
-                </>
-              )}
-            </div>
-
-            <button className="optimize-button" onClick={handleOptimizeRoute}>
-              <Route size={20} />
-              Generate Optimal Route
-            </button>
-
-            {showPath && optimalPath && (
-              <button 
-                className="toggle-path-button" 
-                onClick={() => setShowPath(!showPath)}
-              >
-                {showPath ? 'Hide Route' : 'Show Route'}
-              </button>
-            )}
 
             <div className="collector-info-grid">
               <div className="collector-info-card">

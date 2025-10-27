@@ -78,8 +78,41 @@ const TrashCanModal = ({ can, isOpen, onClose }) => {
             {/* Fullness Section */}
             <div className="fullness-section">
               <div className="section-header">
-                <h3 className="section-title">Fullness Level</h3>
-                <span className="fullness-percentage">{can.fullness}%</span>
+                <h3 className="section-title">Plastic Fullness</h3>
+                <span className="fullness-percentage">{can.plastic_fullness}%</span>
+              </div>
+              <div className="fullness-bar-container">
+                <div className="fullness-bar">
+                  <div
+                    className="fullness-progress"
+                    style={{
+                      width: `${can.plastic_fullness}%`,
+                      backgroundColor: getFullnessColor(can.plastic_fullness),
+                    }}
+                  ></div>
+                </div>
+              </div>
+
+
+              <div className="section-header">
+                <h3 className="section-title">Metal Fullness</h3>
+                <span className="fullness-percentage">{can.metal_fullness}%</span>
+              </div><div className="fullness-bar-container">
+                <div className="fullness-bar">
+                  <div
+                    className="fullness-progress"
+                    style={{
+                      width: `${can.metal_fullness}%`,
+                      backgroundColor: getFullnessColor(can.fullness),
+                    }}
+                  ></div>
+                </div>
+              </div>
+
+
+              <div className="section-header">
+                <h3 className="section-title">Paper Fullness</h3>
+                <span className="fullness-percentage">{can.paper_fullness}%</span>
               </div>
 
               <div className="fullness-bar-container">
@@ -87,7 +120,7 @@ const TrashCanModal = ({ can, isOpen, onClose }) => {
                   <div
                     className="fullness-progress"
                     style={{
-                      width: `${can.fullness}%`,
+                      width: `${can.paper_fullness}%`,
                       backgroundColor: getFullnessColor(can.fullness),
                     }}
                   ></div>
@@ -103,17 +136,8 @@ const TrashCanModal = ({ can, isOpen, onClose }) => {
 
             {/* Stats Grid */}
             <div className="stats-grid">
-              <div className="stat-item">
-                <div className="stat-icon earning-icon">
-                  <TrendingUp size={18} />
-                </div>
-                <div className="stat-content">
-                  <p className="stat-label">Potential Earnings</p>
-                  <p className="stat-value">${can.earnings}</p>
-                </div>
-              </div>
 
-              <div className="stat-item">
+              <div className="stat-item" >
                 <div className="stat-icon collection-icon">
                   <Clock size={18} />
                 </div>
@@ -141,8 +165,8 @@ const TrashCanModal = ({ can, isOpen, onClose }) => {
             <button className="btn-secondary" onClick={onClose}>
               Close
             </button>
-            <button className="btn-primary">
-              Schedule Collection
+            <button className="btn-primary" alert>
+              Buy Now
             </button>
           </div>
         </div>
